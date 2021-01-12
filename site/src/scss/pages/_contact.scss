@@ -1,0 +1,59 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+.contact {
+   max-width: 50rem;
+   width: 100%;
+   min-height: 20rem;
+   padding: 4rem;
+   margin: auto;
+   box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+   transition: all 0.5s ease-in;
+   border-radius: 5px;
+
+   &__input {
+      position: relative;
+      width: 100%;
+      margin-top: 2rem;
+
+      .inputbox {
+         width: 100%;
+         padding: 5px 0;
+         font-size: 16px;
+         margin: 10px 0;
+         border: none;
+         border-bottom: 2px solid #333;
+         outline: none;
+         resize: none;
+      }
+
+      .label {
+         position: absolute;
+         left: 0;
+         padding: 5px 0;
+         font-size: 16px;
+         margin: 10px 0;
+         pointer-events: none;
+         transition: 0.5s;
+         color: #666;
+      }
+   }
+}
+
+.textarea {
+   margin-bottom: 2rem;
+}
+
+.contact .contact__input input:focus ~ span,
+.contact .contact__input input:valid ~ span,
+.contact .contact__input textarea:focus ~ span,
+.contact .contact__input textarea:valid ~ span {
+   color: $primary-color;
+   font-size: 12px;
+   transform: translateY(-2rem);
+}
+
+.form__submit {
+   margin-top: 1rem;
+}

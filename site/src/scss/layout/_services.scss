@@ -1,0 +1,15 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+
+/* Card */
+.services.container {
+   margin: 0 auto;
+}
+
+.services {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+	}
+}
