@@ -1,16 +1,19 @@
 import React from "react"
 import Title from "./title"
-import Image from "gatsby-image"
+import Project from "./Project"
 
-const Project = ({ title, image }) => {
+const Projects = ({ title, projects }) => {
   return (
     <section className="container">
       <Title title={title} />
-      {projects.map(blog => {
-        return <Project key={project.id} {...project} />
-      })}
+      {/* iterate over and spread out the projects  */}
+      <div className="project-center">
+        {projects.map(project => {
+          return <Project key={project.id} {...project} />
+        })}
+      </div>
     </section>
   )
 }
 
-export default Project
+export default Projects

@@ -1,22 +1,24 @@
-// import React from "react"
-// import PropTypes from "prop-types"
-// import Image from "gatsby-image"
+import React from "react"
+import PropTypes from "prop-types"
+import Image from "gatsby-image"
+import { Link } from "gatsby"
 
-// const Project = ({ url, image }) => {
-//   return (
-//     <section className="project">
-//       <a target="_blank" rel="noreferrer" href={url}>
-//         <h1>Hello</h1>
-//         {image && (
-//           <Image fluid={image.childImageSharp.fluid} className="project__img" />
-//         )}
-//       </a>
-//     </section>
-//   )
-// }
+const Project = ({ id,image, slug }) => {
+  return (
+    <section className="project">
+      <Link to={`/projects/${slug}`} className="project" key={id}>
+        {image && (
+          <Image fluid={image.childImageSharp.fluid} className="project__img" />
+        )}
+      </Link>
+    </section>
+  )
+}
 
-// Project.propTypes = {
-//   url: PropTypes.string.isRequired,
-//   image: PropTypes.object.isRequired,
-// }
-// export default Project
+Project.propTypes = {
+  id: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
+  slug: PropTypes.string.isRequired,
+}
+export default Project
