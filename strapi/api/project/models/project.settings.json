@@ -20,7 +20,7 @@
       "required": true
     },
     "image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "files",
@@ -34,9 +34,8 @@
       "type": "uid",
       "targetField": "title"
     },
-    "desc": {
-      "type": "string",
-      "required": true
+    "featured": {
+      "type": "boolean"
     }
   }
 }
