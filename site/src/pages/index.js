@@ -19,7 +19,7 @@ export default ({ data }) => {
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Samuel Adjei as your develop?" />
       <Project projects={projects} title="See my work" />
-      <Contact />
+      <Contact title="Let's get connect" />
     </Layout>
   )
 }

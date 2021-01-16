@@ -7,6 +7,9 @@
   cursor: pointer;
   background-color: #016795;
   color: #fff;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .btn--primary {
@@ -16,11 +19,6 @@
 .btn--outline {
   color: $white;
   padding: 8px 20px;
-}
-
-.btn--tablet {
-  padding: 8px 20px;
-  font-size: 18px;
 }
 
 .btn--desktop {
