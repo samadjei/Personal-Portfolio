@@ -1,7 +1,7 @@
 import React from "react"
 
 import Navbar from "./Navbar"
-// import Footer from "./Footer"
+import Footer from "./Footer"
 
 // Put components that will stay constant on all pages
 const Layout = ({ children }) => {
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
       {children}
       {/* <SoicalButtons /> */}
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

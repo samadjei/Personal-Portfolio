@@ -84,9 +84,37 @@ img {
 }
 
 .title {
-	font-size: 2rem;
+  font-size: 2rem;
   text-align: center;
   text-transform: capitalize;
   color: $primary-color;
   padding-bottom: $p-bottom-xl;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin: 7rem auto;
+  &--inner {
+	 position: relative;
+	 font-size: 1.75rem;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2.5px;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
 }
