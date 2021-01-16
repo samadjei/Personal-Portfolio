@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import Hero from "../components/Hero"
+import Layout from "../components/layout"
+import Hero from "../components/hero"
 import Services from "../components/services"
-import Project from "../components/Projects"
-import MoreInfo from "../components/MoreInfo"
+import Project from "../components/projects"
+import MoreInfo from "../components/moreinfo"
 import Contact from "../components/contact"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const {
@@ -14,7 +15,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      {/* <SEO title="Home" /> */}
+      <SEO title="Home" />
       <Hero />
       <Services title="what services do i provide?" />
       <MoreInfo title="Why hire Samuel Adjei as your developer?" />

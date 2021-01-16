@@ -1,40 +1,13 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import { Button } from "./Button"
-import NavSocial from "../constants/socialLinks"
+import NavSocial from "../constants/sociallinks"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
-  const [button, setButton] = useState(true)
   const [navbar, setNavbar] = useState(false)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
-
-  // Displays the hamburger menu at a certain screen size
-  const showButton = () => {
-    if (window.innerWidth <= 768) {
-      setButton(false)
-    } else {
-      setButton(true)
-    }
-  }
-
-  useEffect(() => {
-    showButton()
-  }, [])
-
-  window.addEventListener("resize", showButton)
-
-  const changeBackground = () => {
-    if (window.scrollY >= 80) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
-    }
-  }
-
-  window.addEventListener("scroll", changeBackground)
 
   return (
     <>
@@ -69,16 +42,6 @@ const Navbar = () => {
                     Work
                   </Link>
                 </li>
-
-                <li className="menu__item">
-                  <Link
-                    to="/services"
-                    className="menu--links"
-                    onClick={closeMobileMenu}
-                  >
-                    Services
-                  </Link>
-                </li>
                 <li className="menu__item">
                   <Link
                     to="/about"
@@ -110,15 +73,14 @@ const Navbar = () => {
               </ul>
             </div>
             <div id="cta">
-              <Link to="/contact">
-                <Button
-                  className="btn"
-                  buttonStyle="btn--outline"
-                  buttonSize="btn--desktop"
-                >
-                  Hire Me
-                </Button>
-              </Link>
+              <a
+                className="btn btn-nav"
+                buttonStyle="btn--outline"
+                buttonSize="btn--desktop"
+                href="hire"
+              >
+                Hire Me
+              </a>
             </div>
           </div>
         </div>

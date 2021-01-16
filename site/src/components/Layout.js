@@ -1,7 +1,7 @@
 import React from "react"
 
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+import Navbar from "./navbar"
+import Footer from "./footer"
 
 // Put components that will stay constant on all pages
 const Layout = ({ children }) => {
@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
       <Navbar />
       {/* contents of the page will be rendered in the children prop */}
       {children}
-      {/* <SoicalButtons /> */}
 
       <Footer />
     </>

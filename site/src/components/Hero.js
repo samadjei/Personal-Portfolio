@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 
-import { Button } from "./Button"
+import { Button } from "./button"
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const Hero = () => {
                 👋🏾
               </span>
               i’m Samuel, a freelance web developer based in Slough who is
-              focused on building bespoke user-targeted websites to help
+              focused on building bespoke and professional websites to help
               businesses gain exposure to potential clients.
             </p>
             <Link to="/contact">

@@ -7,16 +7,12 @@
 }
 
 .hero {
-  min-height: calc(100vh - 8rem);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: $primary-color;
-
-  @include media("<=tablet") {
-	min-height: calc(100vh - 8rem);
- }
 
   &__grid {
     display: flex;
@@ -48,9 +44,9 @@
 
   &--desc {
     color: $white;
-	 margin-bottom: $m-bottom-l;
-	 line-height: 1.5;
-	 letter-spacing: 1px;
+    margin-bottom: $m-bottom-l;
+    line-height: 1.5;
+    letter-spacing: 1px;
   }
 }
 
