@@ -19,14 +19,22 @@
     color: $text;
   }
 
+  &__container {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10rem 5rem;
+  }
+
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     align-items: center;
     grid-gap: 3rem;
     text-align: left;
     margin-bottom: 7rem;
+    justify-items: center;
   }
 
   &__center {

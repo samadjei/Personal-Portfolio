@@ -13,10 +13,12 @@
 @import "layout/grid";
 @import "layout/navbar";
 @import "layout/hero";
+@import "layout/moreInfo";
 @import "layout/about";
 @import "layout/services";
 @import "layout/projects";
 @import "layout/blog";
+@import "layout/contact";
 @import "layout/footer";
 
 @import "pages/404";
@@ -96,8 +98,8 @@ img {
   text-align: center;
   margin: 7rem auto;
   &--inner {
-	 position: relative;
-	 font-size: 1.75rem;
+    position: relative;
+    font-size: 1.75rem;
     &::after {
       content: "";
       position: absolute;

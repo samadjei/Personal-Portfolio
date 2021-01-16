@@ -48,7 +48,9 @@
 
   &--desc {
     color: $white;
-    margin-bottom: $m-bottom-l;
+	 margin-bottom: $m-bottom-l;
+	 line-height: 1.5;
+	 letter-spacing: 1px;
   }
 }
 

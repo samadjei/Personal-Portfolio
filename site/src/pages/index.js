@@ -4,6 +4,8 @@ import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import Services from "../components/services"
 import Project from "../components/Projects"
+import MoreInfo from "../components/MoreInfo"
+import Contact from "../components/contact"
 
 export default ({ data }) => {
   const {
@@ -14,8 +16,10 @@ export default ({ data }) => {
     <Layout>
       {/* <SEO title="Home" /> */}
       <Hero />
-      <Services title="How can i help you?" />
+      <Services title="what services do i provide?" />
+      <MoreInfo title="Why hire Samuel Adjei as your develop?" />
       <Project projects={projects} title="See my work" />
+      <Contact />
     </Layout>
   )
 }

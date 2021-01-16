@@ -6,7 +6,7 @@ import { FiLinkedin } from "react-icons/fi"
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="footer__container">
         <div className="footer__grid">
           <div className="footer__left">
             <h3 className="footer--titles white">Samuel Adjei</h3>
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           <div className="footer__center">
             <ul>
-              <h3 className="footer--titles">Quick Links</h3>
+              <h3 className="footer--titles white">Quick Links</h3>
               <li>
                 <Link className="white" to="/">
                   Work
@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="footer__right">
             <div className="footer__contact">
               <h3 className="footer--titles white">Contact</h3>
-              <p>info.samadjei@gmail.com</p>
+              <p className="white">info.samadjei@gmail.com</p>
             </div>
             <div className="footer__social">
               <h3 className="footer--titles white">Socials</h3>
@@ -84,7 +84,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="footer--name">
+        <p className="footer--name white">
           &copy; {new Date().getFullYear()} Samuel Adjei Ltd - Feelance Web
           Developer - All Rights Reserved.{" "}
         </p>
