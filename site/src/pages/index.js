@@ -17,8 +17,8 @@ export default ({ data }) => {
       {/* <SEO title="Home" /> */}
       <Hero />
       <Services title="what services do i provide?" />
-      <MoreInfo title="Why hire Samuel Adjei as your develop?" />
-      <Project projects={projects} title="See my work" />
+      <MoreInfo title="Why hire Samuel Adjei as your developer?" />
+      <Project projects={projects} title="See my work" showLink />
       <Contact title="Let's get connect" />
     </Layout>
   )

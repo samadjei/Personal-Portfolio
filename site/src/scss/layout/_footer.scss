@@ -35,10 +35,13 @@
     text-align: left;
     margin-bottom: 7rem;
     justify-items: center;
+    @include media("<=tablet") {
+      justify-items: start;
+    }
   }
 
   &__center {
-    @include media(">=desktop") {
+    @include media("<=tablet", ">=tablet") {
       margin: 0 auto;
     }
   }
