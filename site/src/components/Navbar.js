@@ -46,7 +46,7 @@ class Navbar extends Component {
                     </Link>
                   </li>
                   <li className="menu__item">
-                    <Link to="/blog" className="menu--links">
+                    <Link to="/posts" className="menu--links">
                       Blog
                     </Link>
                   </li>

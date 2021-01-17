@@ -9,42 +9,38 @@ function socialLinks() {
     <ul className="menu__socials">
       <li className="menu__social">
         <a
-          className="menu__social--links"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/samadjei"
         >
-          <FiGithub />
+          <FiGithub className="social-item" />
         </a>
       </li>
       <li className="menu__social">
         <a
-          className="menu__social--links"
           target="_blank"
           rel="noopener noreferrer"
           href=" www.linkedin.com/in/samuel-adjei"
         >
-          <FiLinkedin />
+          <FiLinkedin className="social-item" />
         </a>
       </li>
       <li className="menu__social">
         <a
-          className="menu__social--links"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.instagram.com/samadjeiltd/"
         >
-          <FiInstagram />
+          <FiInstagram className="social-item" />
         </a>
       </li>
       <li className="menu__social">
         <a
-          className="menu__social--links"
           target="_blank"
           rel="noopener noreferrer"
           href="https://twitter.com/samkadjei"
         >
-          <FiTwitter />
+          <FiTwitter className="social-item" />
         </a>
       </li>
     </ul>

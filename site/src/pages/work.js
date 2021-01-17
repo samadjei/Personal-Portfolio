@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Projects from "../components/Projects"
 // import SEO from "../components/SEO"
 
-const ProjectsPage = ({
+const work = ({
   data: {
     allStrapiProjects: { nodes: projects },
   },
@@ -39,4 +39,4 @@ export const query = graphql`
     }
   }
 `
-export default ProjectsPage
+export default work

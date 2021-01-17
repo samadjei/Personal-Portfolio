@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //   position: sticky;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -196,19 +196,23 @@
       width: 80vw;
       margin: 0 auto;
       margin-top: 8rem;
-    }
+	 }
+	 
+	 &__social {
+		display: block;
+	 }
+  }
 
-    &__social {
-      display: block;
-      &--links {
-        display: inline-block;
-        transition: all 0.5s ease;
-        &:hover {
-          color: $white;
-          transform: translate(0, -8px);
-        }
-      }
+
+  .social-item {
+    display: inline-block;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $white;
+      transform: translate(0, -8px);
     }
+    width: 2.75rem;
+    height: 2.75rem;
   }
 
   .navbar-logo {

@@ -7,10 +7,12 @@ import Project from "../components/projects"
 import MoreInfo from "../components/moreinfo"
 import Contact from "../components/contact"
 import SEO from "../components/seo"
+import Blogs from "../components/blogs"
 
 export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data
 
   return (
@@ -21,6 +23,7 @@ export default ({ data }) => {
       <MoreInfo title="Why hire Samuel Adjei as your developer?" />
       <Project projects={projects} title="See my work" showLink />
       <Contact title="Let's get connect" />
+      <Blogs blogs={blogs} title="Latest Blog Posts" showLink />
     </Layout>
   )
 }
@@ -41,6 +44,16 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    allStrapiBlogs(limit: 3, sort: { fields: date, order: DESC }) {
+      nodes {
+        slug
+        content
+        desc
+        date(formatString: "DD MMM, YYYY")
+        id
+        title
       }
     }
   }
