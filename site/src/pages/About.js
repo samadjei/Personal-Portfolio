@@ -9,16 +9,10 @@ import Title from "../components/title"
 const About = ({ data }) => {
   return (
     <Layout>
-      <div className="container">
+      <div className="about container">
         <SEO title="About" />
         <Title title="About Samuel Adjei"></Title>
-        <div className="about__flex">
-          <div className="about__profile">
-            <Img
-              className="about__profile--photo"
-              fluid={data.aboutProfile.childImageSharp.fluid}
-            />
-          </div>
+        <div className="about__center">
           <div className="about__content">
             <p>
               Hey there! I'm Samuel, a freelance web developer from Slough, UK.
@@ -27,6 +21,10 @@ const About = ({ data }) => {
               self-taught web developer and i am continuosly striving to improve
               my knowldge and skillset to provide the most value for my clients.
             </p>
+            <Img
+              className="profile--photo"
+              fluid={data.aboutProfile.childImageSharp.fluid}
+            />
           </div>
         </div>
       </div>

@@ -3,24 +3,24 @@
 @import "../abstracts/breakpoints";
 
 .about {
-  &__flex {
+  &__center {
     display: flex;
-    justify-items: center;
-    align-items: start;
-    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
   }
 
-  &__content {
-    flex: 4;
+  &__content ~ p,
+  Img {
+    display: inline-block;
+    padding: 2rem 0;
   }
-  &__profile {
-    &--photo {
-      width: 20rem;
-      height: 100%;
-      border-radius: 50%;
-      @include media("<=laptop") {
-        width: 25rem;
-      }
-    }
+}
+.profile--photo {
+  width: 20rem;
+  height: 100%;
+  border-radius: 50%;
+  @include media("<=laptop") {
+    width: 25rem;
   }
 }
