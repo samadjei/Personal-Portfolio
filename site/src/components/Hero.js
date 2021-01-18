@@ -31,7 +31,7 @@ const Hero = () => {
               focused on building bespoke and professional websites to help
               businesses gain exposure to potential clients.
             </p>
-            <Link to="/contact">
+            <a href="#hire">
               <Button
                 className="btn"
                 buttonStyle="btn--outline"
@@ -39,7 +39,7 @@ const Hero = () => {
               >
                 Hire Me
               </Button>
-            </Link>
+            </a>
           </div>
           <div className="profile">
             <Image

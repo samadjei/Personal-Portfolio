@@ -10,17 +10,51 @@
     text-align: left;
   }
 
-  &__content ~ p,
-  Img {
-    display: inline-block;
-    padding: 2rem 0;
+  &__content {
+    &--info {
+      margin-bottom: 2rem;
+    }
   }
 }
-.profile--photo {
+
+.about-img {
+  margin: 2rem 0;
+}
+.about--photo {
+  display: inline-block;
   width: 20rem;
   height: 100%;
-  border-radius: 50%;
   @include media("<=laptop") {
     width: 25rem;
   }
+}
+
+.stack {
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+  &-icons {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.about__contact {
+  max-width: 68rem;
+  @include media(">=desktop") {
+    margin: 0 auto;
+  }
+}
+
+.about__contact .title,
+.about__contact .contact--sub {
+  text-align: left;
+}
+
+.about__contact .contact form {
+  margin-left: -4rem;
 }
