@@ -15,7 +15,7 @@ import { FaReact } from "react-icons/fa"
 import { FaFigma } from "react-icons/fa"
 import { FaAdobe } from "react-icons/fa"
 
-const About = ({ title }) => {
+const About = () => {
   const data = useStaticQuery(graphql`
     query {
       aboutProfile: file(relativePath: { eq: "profile-photo.jpg" }) {
@@ -57,7 +57,7 @@ const About = ({ title }) => {
             </p>
             <p className="about__content--info">
               In my spare time, if i'm not hanging out with friends, you'll
-              probably catch my in the gym.
+              probably catch my in the gym, playing video games or watching anime. I am what some people might call a nerd haha. 
             </p>
             <div className="about-img">
               <Img
@@ -68,7 +68,7 @@ const About = ({ title }) => {
             <p className="about__content--info">
               Being a self-taught developer, i have taken the time to learn the
               latest web technologies have available which will allow me to
-              design and create the most modern and performante site possible.
+              design and create the most modern and performante site possible. I enjoy learning and challenging myself when it comes to building website / web applications.
             </p>
             <div className="stack">
               <h4>Here are my current tech stack:</h4>
@@ -85,7 +85,7 @@ const About = ({ title }) => {
           </div>
         </div>
         <div className="about__contact">
-          <Contact title={"Contact Me"} />
+          <Contact id="about-form" title={"Contact Me"} />
         </div>
       </div>
     </Layout>

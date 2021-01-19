@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  //   position: sticky;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -108,7 +108,7 @@
   }
 }
 
-#cta .btn-nav {
+#cta {
   font-size: 1.6rem;
   @include media("<=tablet") {
     display: none;
@@ -196,13 +196,12 @@
       width: 80vw;
       margin: 0 auto;
       margin-top: 8rem;
-	 }
-	 
-	 &__social {
-		display: block;
-	 }
-  }
+    }
 
+    &__social {
+      display: block;
+    }
+  }
 
   .social-item {
     display: inline-block;

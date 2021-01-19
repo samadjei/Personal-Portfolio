@@ -44,10 +44,8 @@
 }
 
 .about__contact {
-  max-width: 68rem;
-  @include media(">=desktop") {
-    margin: 0 auto;
-  }
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 .about__contact .title,
@@ -55,6 +53,11 @@
   text-align: left;
 }
 
-.about__contact .contact form {
-  margin-left: -4rem;
+.about__contact .contact {
+  padding: 0rem;
+  margin-top: 4rem;
+}
+
+.about__contact .container {
+  padding: 5rem 0rem;
 }
