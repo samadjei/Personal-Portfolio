@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
 
 const Project = ({ id, image, url }) => {
   return (

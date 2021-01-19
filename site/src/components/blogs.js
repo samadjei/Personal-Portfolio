@@ -1,6 +1,6 @@
 import React from "react"
 import Title from "./Title"
-import Blog from "./Blog"
+import Blog from "./blog"
 import { Link } from "gatsby"
 
 export const blogs = ({ blogs, title, showLink }) => {

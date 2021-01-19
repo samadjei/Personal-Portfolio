@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import NavSocial from "../constants/sociallinks"
-import { Button } from "./Button"
+import { Button } from "./button"
 
 class Navbar extends Component {
   state = { clicked: false }

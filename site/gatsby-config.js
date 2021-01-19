@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
+	 `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -26,17 +27,13 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
-    "gatsby-plugin-sass",
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
-        //   cssLoaderOptions: {
-        //     camelCase: false,
-        //   },
-      },
-    },
+   //  {
+   //    resolve: `gatsby-source-filesystem`,
+   //    options: {
+   //      name: `src`,
+   //      path: `${__dirname}/src`,
+   //    },
+   //  },
     {
       resolve: `gatsby-source-strapi`,
       options: {
