@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import NavSocial from "../constants/sociallinks"
-import { Button } from "./button"
+import SocialLinks from "../constants/SocialLinks"
+import { Button } from "./Button"
 
 class Navbar extends Component {
   state = { clicked: false }
@@ -56,19 +56,9 @@ class Navbar extends Component {
                       Contact
                     </a>
                   </li>
-                  <NavSocial />
+                  <SocialLinks />
                 </ul>
               </div>
-              {/* <div id="cta">
-                <a
-                  className="btn btn-nav"
-                  buttonStyle="btn--outline"
-                  buttonSize="btn--desktop"
-                  href="#hire"
-                >
-                  Hire Me
-                </a>
-              </div> */}
               <Link id="cta" to="/contacts">
                 <Button
                   className="btn btn-nav"

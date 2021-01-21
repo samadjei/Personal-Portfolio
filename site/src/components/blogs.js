@@ -1,9 +1,9 @@
 import React from "react"
 import Title from "./Title"
-import Blog from "./blog"
+import Blog from "./Blog"
 import { Link } from "gatsby"
 
-export const blogs = ({ blogs, title, showLink }) => {
+export const Blogs = ({ blogs, title, showLink }) => {
   return (
     <section className="blog__container">
       <Title title={title} />

@@ -1,5 +1,5 @@
 import React from "react"
-import Title from "./title"
+import Title from "./Title"
 
 import Design from "../assets/svg/services/design.svg"
 import Develop from "../assets/svg/services/develop.svg"

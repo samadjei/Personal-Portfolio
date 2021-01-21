@@ -18,7 +18,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
-	 `gatsby-plugin-sass`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -27,18 +27,19 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
-   //  {
-   //    resolve: `gatsby-source-filesystem`,
-   //    options: {
-   //      name: `src`,
-   //      path: `${__dirname}/src`,
-   //    },
-   //  },
+    //  {
+    //    resolve: `gatsby-source-strapi`,
+    //    options: {
+    //      apiURL: `http://localhost:1337`,
+    //      queryLimit: 1000, // Default to 100
+    //      contentTypes: [`projects`, `blogs`],
+    //    },
+    //  },
     {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
+        queryLimit: 1000,
         contentTypes: [`projects`, `blogs`],
       },
     },

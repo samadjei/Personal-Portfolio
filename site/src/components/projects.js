@@ -1,6 +1,6 @@
 import React from "react"
-import Title from "./title"
-import Project from "./project"
+import Title from "./Title"
+import Project from "./Project"
 import { Link } from "gatsby"
 
 const Projects = ({ title, projects, showLink }) => {

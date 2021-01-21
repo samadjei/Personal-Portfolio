@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 
-import { Button } from "./button"
+import { Button } from "./Button"
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
