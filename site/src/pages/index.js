@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Hero from "../components/hero"
-import Services from "../components/services"
-import Project from "../components/projects"
-import MoreInfo from "../components/moreinfo"
-import Contact from "../components/contact"
-import SEO from "../components/seo"
-import Blogs from "../components/blogs"
+import Layout from "../components/Layout"
+import Hero from "../components/Hero"
+import Services from "../components/Services"
+import Project from "../components/Projects"
+import MoreInfo from "../components/MoreInfo"
+import Contact from "../components/Contact"
+import SEO from "../components/SEO"
+import Blogs from "../components/Blogs"
 
 export default ({ data }) => {
   const {

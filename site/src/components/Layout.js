@@ -1,7 +1,7 @@
 import React from "react"
 
-import Navbar from "./navbar"
-import Footer from "./footer"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 // Put components that will stay constant on all pages
 const Layout = ({ children }) => {

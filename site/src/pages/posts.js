@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Blogs from "../components/blogs"
-import SEO from "../components/seo"
+import Blogs from "../components/Blogs"
+import SEO from "../components/SEO"
 
 const Posts = ({
   data: {

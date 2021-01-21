@@ -1,6 +1,5 @@
 import React from "react"
 import "../scss/components/_buttons.scss"
-// import { Link } from "gatsby"
 
 const STYLES = ["btn--primary", "btn--outline", "btn--test"]
 

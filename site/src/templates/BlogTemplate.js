@@ -5,9 +5,7 @@ import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 import { Button } from "../components/Button"
 
-import ".././scss/template/_blogTemplate.scss"
-
-const blogTemplate = ({ data }) => {
+const BlogTemplate = ({ data }) => {
   const { content, title, desc } = data.blog
 
   return (
@@ -41,4 +39,4 @@ export const query = graphql`
   }
 `
 
-export default blogTemplate
+export default BlogTemplate

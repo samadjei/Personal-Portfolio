@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
-import Title from "../components/title"
+import Layout from "../components/Layout"
+import Title from "../components/Title"
 
-const contacts = () => {
+const Contacts = () => {
   return (
     <Layout>
       <section id="hire" className="container">
@@ -70,4 +70,4 @@ const contacts = () => {
   )
 }
 
-export default contacts
+export default Contacts

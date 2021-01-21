@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Projects from "../components/projects"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import Projects from "../components/Projects"
+import SEO from "../components/SEO"
 
-const work = ({
+const Work = ({
   data: {
     allStrapiProjects: { nodes: projects },
   },
@@ -39,4 +39,4 @@ export const query = graphql`
     }
   }
 `
-export default work
+export default Work

@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import SEO from "../components/SEO"
-import Title from "../components/title"
-import Contact from "../components/contact"
+import Title from "../components/Title"
+import Contact from "../components/Contact"
 
 import { FaHtml5 } from "react-icons/fa"
 import { FaCss3Alt } from "react-icons/fa"

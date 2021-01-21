@@ -22,4 +22,4 @@ export const Blogs = ({ blogs, title, showLink }) => {
     </section>
   )
 }
-export default blogs
+export default Blogs
