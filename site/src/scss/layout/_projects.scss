@@ -2,6 +2,10 @@
 @import "../abstracts/variables";
 @import "../abstracts/breakpoints";
 
+.pj.container {
+  padding-top: 0rem;
+}
+
 .project-center {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));

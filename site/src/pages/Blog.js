@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
 
-const Posts = ({
+const Blog = ({
   data: {
     allStrapiBlogs: { nodes: blogs },
   },
@@ -33,4 +33,4 @@ export const query = graphql`
     }
   }
 `
-export default Posts
+export default Blog

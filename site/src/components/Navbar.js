@@ -37,29 +37,32 @@ class Navbar extends Component {
               <div className="navbar__menus">
                 <ul className={this.state.clicked ? "menu active" : "menu"}>
                   <li className="menu__item">
-                    <Link to="/work" className="menu--links">
+                    <Link to="/Work" className="menu--links">
                       Work
                     </Link>
                   </li>
                   <li className="menu__item">
-                    <Link to="/about" className="menu--links">
+                    <Link to="/About" className="menu--links">
                       About
                     </Link>
                   </li>
                   <li className="menu__item">
-                    <Link to="/posts" className="menu--links">
+                    <Link to="/Blog" className="menu--links">
                       Blog
                     </Link>
                   </li>
                   <li className="menu__item">
-                    <a className="menu--links-mobile" href="#hire">
+                    {/* <a className="menu--links-mobile" href="#hire">
                       Contact
-                    </a>
+                    </a> */}
+                    <Link to="/Contact" className="menu--links-mobile">
+                      Blog
+                    </Link>
                   </li>
                   <SocialLinks />
                 </ul>
               </div>
-              <Link id="cta" to="/contacts">
+              <Link id="cta" to="/Contacts">
                 <Button
                   className="btn btn-nav"
                   buttonStyle="btn--outline"

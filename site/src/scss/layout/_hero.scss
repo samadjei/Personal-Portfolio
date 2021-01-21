@@ -28,6 +28,8 @@
     margin: 0 auto;
     flex: 2;
     margin-right: 30rem;
+    max-width: 53rem;
+
     @include media("<=desktop") {
       margin-right: 3rem;
     }
@@ -54,9 +56,11 @@
   flex: 1;
   &--photo {
     width: 40rem;
-    height: 100%;
-    @include media("<=laptop") {
+	 height: 100%;
+	 z-index: 1;
+    @include media("<=desktop") {
       width: 25rem;
+      margin: 0 auto;
     }
   }
 }

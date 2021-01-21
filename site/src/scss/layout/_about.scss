@@ -24,6 +24,7 @@
   display: inline-block;
   width: 20rem;
   height: 100%;
+  z-index: -1;
   @include media("<=laptop") {
     width: 25rem;
   }
@@ -48,6 +49,10 @@
   margin: 0 auto;
 }
 
+.about .about-me h2 {
+  text-align: left;
+}
+
 .about__contact .title,
 .about__contact .contact--sub {
   text-align: left;
@@ -60,4 +65,8 @@
 
 .about__contact .container {
   padding: 5rem 0rem;
+}
+
+.about.container {
+  width: 710px;
 }

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const Projects = ({ title, projects, showLink }) => {
   return (
-    <section className="container">
+    <section className="pj container">
       <Title title={title} />
       {/* iterate over and spread out the projects  */}
       <div className="project-center">
@@ -15,7 +15,7 @@ const Projects = ({ title, projects, showLink }) => {
       </div>
       {showLink && (
         <div className="link">
-          <Link className="link--inner" to="/work">
+          <Link className="link--inner" to="/Work">
             View More Projects
           </Link>
         </div>

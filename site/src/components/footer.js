@@ -17,7 +17,7 @@ const Footer = () => {
               I'm a Freelance Web Developer based in Slough. I work remotely,
               providing web developer/design services to businesses around the
               UK. If you have an upcoming project you'd like to discuss, please
-              get in <Link to="/contact">touch</Link>{" "}
+              get in <Link to="/Contact">touch</Link>{" "}
             </p>
           </div>
           <div className="footer__center">
