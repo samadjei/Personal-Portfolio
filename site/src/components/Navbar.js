@@ -56,7 +56,7 @@ class Navbar extends Component {
                       Contact
                     </a> */}
                     <Link to="/Contact" className="menu--links-mobile">
-                      Blog
+                      Contact
                     </Link>
                   </li>
                   <SocialLinks />

@@ -57,7 +57,7 @@
   &--photo {
     width: 40rem;
 	 height: 100%;
-	 z-index: 1;
+	//  z-index: 1;
     @include media("<=desktop") {
       width: 25rem;
       margin: 0 auto;
