@@ -19,13 +19,13 @@ const Contact = ({ title }) => {
         >
           <input type="hidden" name="form-name" value="contact v1" />
           <div className="contact__info">
-            <label className="label" htmlFor="name">
+            <label for="name" className="label" htmlFor="name">
               Name
             </label>
             <input type="text" name="name" placeholder="John Doe" />
           </div>
           <div className="contact__info">
-            <label className="label" htmlFor="email">
+            <label for="email" className="label" htmlFor="email">
               Email
             </label>
             <input
@@ -36,11 +36,10 @@ const Contact = ({ title }) => {
             />
           </div>
           <div className="contact__info">
-            <label className="label" htmlFor="message">
+            <label for="message" className="label" htmlFor="message">
               Message
             </label>
             <textarea
-              for="message"
               name="message"
               rows="5"
               required="required"

@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="footer__grid">
           <div className="footer__left">
             <h3 className="footer--titles white">Samuel Adjei</h3>
-            <h5 className="footer--subhead white">
+            <h4 className="footer--subhead white">
               Freelance Web Designer & Developer
-            </h5>
+            </h4>
             <p className="white">
               I'm a Freelance Web Developer based in Slough. I work remotely,
               providing web developer/design services to businesses around the
