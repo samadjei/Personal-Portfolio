@@ -13,7 +13,13 @@ const Services = ({ title }) => {
       <div className="services__grid">
         <div className="services__content">
           <div className="icon">
-            <img className="icon--size" src={Design} alt="Design" />
+            <img
+              width="150"
+              height="150"
+              className="icon--size"
+              src={Design}
+              alt="Design"
+            />
           </div>
           <div className="services__details">
             <h3>Web Design</h3>
@@ -26,7 +32,13 @@ const Services = ({ title }) => {
         </div>
         <div className="services__content">
           <div className="icon">
-            <img className="icon--size" src={Develop} alt="Design" />
+            <img
+              width="150"
+              height="150"
+              className="icon--size"
+              src={Develop}
+              alt="Design"
+            />
           </div>
           <div>
             <h3>Web Development</h3>
@@ -39,7 +51,13 @@ const Services = ({ title }) => {
         </div>
         <div className="services__content">
           <div className="icon">
-            <img className="icon--size" src={SEO} alt="Design" />
+            <img
+              width="150"
+              height="150"
+              className="icon--size"
+              src={SEO}
+              alt="Design"
+            />
           </div>
           <div>
             <h3>SEO</h3>
@@ -52,7 +70,13 @@ const Services = ({ title }) => {
         </div>
         <div className="services__content">
           <div className="icon">
-            <img className="icon--size" src={Launch} alt="Design" />
+            <img
+              width="150"
+              height="150"
+              className="icon--size"
+              src={Launch}
+              alt="Design"
+            />
           </div>
           <div>
             <h3>Content Management</h3>

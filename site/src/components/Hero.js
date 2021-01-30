@@ -43,6 +43,7 @@ const Hero = () => {
           </div>
           <div className="profile">
             <Image
+              loading="lazy"
               className="profile--photo"
               fluid={data.profile.childImageSharp.fluid}
             />

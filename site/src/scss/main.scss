@@ -46,7 +46,7 @@ html {
   /* 10/16*100 */
   /* this method is used when a user decides to adjust the font size on the browser  */
   font-size: 62.5%;
-//   scroll-behavior: smooth;
+  //   scroll-behavior: smooth;
 }
 
 body {
@@ -68,6 +68,7 @@ ul {
 img {
   max-width: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .container {
