@@ -69,7 +69,8 @@
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(3, auto);
+  //   grid-template-columns: repeat(4, auto);
   grid-gap: 2rem;
   text-align: center;
   padding-right: 3rem;
@@ -132,11 +133,11 @@
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -144,11 +145,12 @@
     position: absolute;
     top: 0;
     right: -100%;
+    //  transform: translateX(100%);
     opacity: 1;
     transition: all 0.5s ease;
-    overflow: hidden;
 
     &.active {
+      display: flex;
       background: $secondary-color;
       right: 0;
       opacity: 1;

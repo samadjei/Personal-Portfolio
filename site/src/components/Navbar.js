@@ -46,11 +46,11 @@ class Navbar extends Component {
                       About
                     </Link>
                   </li>
-                  <li className="menu__item">
+                  {/* <li className="menu__item">
                     <Link to="/Blog" className="menu--links">
                       Blog
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="menu__item">
                     {/* <a className="menu--links-mobile" href="#hire">
                       Contact
@@ -59,7 +59,9 @@ class Navbar extends Component {
                       Contact
                     </Link>
                   </li>
-                  <SocialLinks />
+                  <div className="nav-icons">
+                    <SocialLinks />
+                  </div>
                 </ul>
               </div>
               <Link id="cta" to="/Contacts">
