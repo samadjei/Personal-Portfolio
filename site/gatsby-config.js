@@ -27,18 +27,12 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
-    //  {
-    //    resolve: `gatsby-source-strapi`,
-    //    options: {
-    //      apiURL: `http://localhost:1337`,
-    //      queryLimit: 1000, // Default to 100
-    //      contentTypes: [`projects`, `blogs`],
-    //    },
-    //  },
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: process.env.DEPLOY_URL
+          ? "https://strapi-porfolio-postgresql.herokuapp.com"
+          : "http://localhost:1337",
         queryLimit: 1000,
         contentTypes: [`projects`, `blogs`],
       },
