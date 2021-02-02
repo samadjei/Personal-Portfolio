@@ -20,14 +20,14 @@ const About = () => {
     query {
       aboutProfile: file(relativePath: { eq: "profile-photo.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       presenting: file(relativePath: { eq: "presenting.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid
           }
         }

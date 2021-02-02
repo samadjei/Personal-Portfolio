@@ -46,11 +46,11 @@ class Navbar extends Component {
                       About
                     </Link>
                   </li>
-                  {/* <li className="menu__item">
+                  <li className="menu__item">
                     <Link to="/Blog" className="menu--links">
                       Blog
                     </Link>
-                  </li> */}
+                  </li>
                   <li className="menu__item">
                     {/* <a className="menu--links-mobile" href="#hire">
                       Contact

@@ -69,8 +69,7 @@
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  //   grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 2rem;
   text-align: center;
   padding-right: 3rem;

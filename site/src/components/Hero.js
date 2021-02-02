@@ -9,7 +9,7 @@ const Hero = () => {
     query Images {
       profile: file(relativePath: { eq: "profile-photo.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }

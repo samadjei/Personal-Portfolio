@@ -1,18 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Freelance Website Developer",
-    description: "This is a portfolio site for Samuel Adjei",
+    title: "Sam Adjei Freelance Web Developer",
+    description: "Portfolio site by Sam Adjei",
     author: "Sam Adjei",
     twitterUsername: "@samkadjei",
     image: "/twitter-img.png",
-    // siteUrl: "www.samadjei.com",
+    //  siteUrl: "https://www.samadjei.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -51,5 +45,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-offline`,
   ],
 }

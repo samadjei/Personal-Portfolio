@@ -11,7 +11,7 @@ const Work = ({
 }) => {
   return (
     <Layout>
-      <SEO title="Projects" />
+      <SEO title="Work" />
       <section className="projects-page">
         <Projects projects={projects} title="all projects" />
       </section>
@@ -30,7 +30,7 @@ export const query = graphql`
         url
         image {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
